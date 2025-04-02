@@ -1,7 +1,6 @@
 import json
 from io import BytesIO
 
-import pandas as pd
 import requests
 import streamlit as st
 from PIL import Image
