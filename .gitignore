@@ -1,0 +1,24 @@
+__pycache__
+.DS_Store
+.venv/
+
+# test data
+index/*
+
+# coverage reports
+coverage.xml
+report.xml
+.coverage
+
+# .env files
+.env
+
+
+# docs build files
+docs/api/reference/
+docs/_build/
+docs/output/
+
+scratch/
+
+.pytest_cache/
