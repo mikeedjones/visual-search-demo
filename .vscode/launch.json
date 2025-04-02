@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "lens-service",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/service.py",
+            "justMyCode": true
+        },
+        {
+            "name": "lens-gui",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/gui.py",
+        },
+        {
+            "name": "lens-pipeline",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/pipeline.py",
+        }
+    ]
+}

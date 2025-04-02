@@ -6,6 +6,12 @@ readme = "README.md"
 dependencies = [
     "fastapi>=0.115.11",
     "uvicorn==0.21.1",
+    "streamlit>=1.44.1",
+    "transformers>=4.50.3",
+    "torch>=2.6.0",
+    "pillow>=11.1.0",
+    "types-pillow>=10.2.0.20240822",
+    "python-multipart>=0.0.20",
 ]
 
 [tool.uv]
