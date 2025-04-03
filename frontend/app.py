@@ -37,22 +37,22 @@ with col1:
     # Tab 2: Camera Input
     with tab2:
         enable = st.checkbox("Enable camera")
-        uploaded_file = st.camera_input("Take a picture", disabled=not enable, kwargs={"height": 200})
+        camera_image = st.camera_input("Take a picture", disabled=not enable, kwargs={"height": 200})
 
-    if not uploaded_file:
+    if not uploaded_file and not camera_image:
         st.info("Please upload an image or enable the camera.")
 
 with col2:
-
-    # Add a search button
-    if uploaded_file:
+    # Search on upload
+    if uploaded_file or camera_image:
+        image = camera_image if camera_image else uploaded_file
         try:
             with st.spinner("Searching for similar products..."):
                 # Reset file position before sending
                 uploaded_file.seek(0)
 
                 # Send the image to the FastAPI service
-                files = {"query_image": uploaded_file}
+                files = {"query_image": image}
                 response = requests.post(f"{api_url}/visual-search", files=files, timeout=3)
 
                 if response.status_code == 200:
