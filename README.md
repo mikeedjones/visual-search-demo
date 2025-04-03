@@ -2,8 +2,6 @@
 
 This project is a visual search engine that lets you upload an image and find similar products in a catalog. It's like searching with pictures instead of words!
 
-![Visual Search Demo](https://placehold.co/600x400/e4e4e4/555555?text=Visual+Search+Demo)
-
 ## What This Project Does
 
 1. **Upload an image** or take a photo with your camera
